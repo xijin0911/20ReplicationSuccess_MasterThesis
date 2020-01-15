@@ -1,6 +1,10 @@
 \documentclass[11pt,a4paper,twoside]{book}
 \input{header.sty}   % packages, layout and standard macros
 
+\RequirePackage[a-1b]{pdfx}
+\RequirePackage[latin1,utf8]{inputenc}
+\usepackage[natbib, style=authoryear, backend=bibtex]{biblatex}
+
 \begin{document}
 \input{title}
 
@@ -20,14 +24,14 @@ opts_chunk$set(
 \thispagestyle{empty}
 \begin{center}
   \vspace*{6cm}{\bfseries\Huge
-  $p$-values:\\[5mm] their use, abuse and proper use \\[5mm]
-  illustrated with seven facets 
+  Replication Success:\\[5mm] Sceptical Confidence Interval \\[5mm]
+    
   }
   \vfill
   \rm
 
   \LARGE
-  M\"axli Musterli\\[12mm]
+  Xijin Chen\\[12mm]
   
   \normalsize
   Version \today
