@@ -1,10 +1,24 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
 \vspace *{13.mm}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\bfseries {Preface}}{iii}{chapter*.2}% 
+\defcounter {refsection}{0}\relax 
 \vspace *{10mm}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Data}{3}{chapter.2}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Results}{5}{chapter.3}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Discussion and Outlook}{7}{chapter.4}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusions}{9}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Appendix}{11}{appendix.A}% 
+\defcounter {refsection}{0}\relax 
+\vspace *{10mm}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\bfseries Bibliography}{13}{section*.4}% 

@@ -46,9 +46,19 @@ Combine evidence from both studies to improve results over the consideration of 
 
 Judge whether the effect size of replication sutdy is within the 95\% prediction interval \citep{patil2016should}.
 
+5. Bayes 
 
-8. prediction market:  In the prediction market for a particular target study, peers who were likely to be familiar with experimental methods in economics could buy or sell shares whose monetary value depended on whether the target study was replicated (fig. S4 and tables S1 and S2). The prediction markets produce a collective market probability of replication (27) that can be interpreted as a replicability indicator (26). 
+Why Bayesian.
 
+
+Among these approaches for assessment of replciation success, 'Sceptical $p$-value' works well as a quantitative measure for replication success s\citep{held2018new}. It defined replication success as the conflict between the sufficiently sceptical priro and the replication effect estimate. With the integration of the uncertainty of two studies, the original one and the replication one, and comparison of respective effect size, this Bayes-non-Bayes approach provides effective approach for evaluation of replication success.
+
+However, there are some essential weakness of this method, which makes it not so attractive for replicaiton success evaluation.
+
+
+From CI to p 
+
+To assess replication success by an confidence interval, this master thesis have the following goals. Chapter 1 introduction of the method, Chapter 2 talks about the mehtod with the theoretical background, Chapter 3 show the results of implemention of this approach in the the datase. Finally, the thesis would be closed with a discussion.
 
 
 

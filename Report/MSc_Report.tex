@@ -50,6 +50,10 @@
 
 \usepackage{alltt}
 \input{header.sty}   % packages, layout and standard macros
+
+\RequirePackage[a-1b]{pdfx}
+\RequirePackage[latin1,utf8]{inputenc}
+\usepackage[natbib, style=authoryear, backend=bibtex]{biblatex}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 \input{title}
@@ -64,14 +68,14 @@
 \thispagestyle{empty}
 \begin{center}
   \vspace*{6cm}{\bfseries\Huge
-  $p$-values:\\[5mm] their use, abuse and proper use \\[5mm]
-  illustrated with seven facets 
+  Replication Success:\\[5mm] Sceptical Confidence Interval \\[5mm]
+    
   }
   \vfill
   \rm
 
   \LARGE
-  M\"axli Musterli\\[12mm]
+  Xijin Chen\\[12mm]
   
   \normalsize
   Version \today
@@ -114,7 +118,56 @@ Howdy!
 
 \chapter{Introduction}
 
-Why, what and how\dots
+Reproducible research is particularly important because it forms the foundation on which future studies are built and it indicates the establishement of credibility of a hypothesis. In the case of biomedical research, it is preclinical research that provides the exciting, new ideas that will eventually find their way into clinical studies and new drugs that provide benefit to humankind \citep{begley2015reproducibility}. 
+
+
+The past few year have witnessed impressive efforts on replication studies. Among these reproducibility projects, Reproducibility Project: Psychology (RP:P) is the largest and most well known one \citep{open2015estimating}. It involved 270 crowd sourced researchers in 64 different institutions in 11 different countries. Researchers attempted direct replications of 100 studies published in three leading psychology journals in the year 2008. Each study was replicated only once. Replications attempted to follow original protocols as closely as possible. In almost all cases, replication studies used larger sample sizes than the original studies and therefore had greater statistical power, which means a greater probability of correctly rejecting the null hypothesis (i.e., that no relationship exists).
+
+
+However, a larger number of reports illustrated that the results of large scale reproducibility projects could not be replicated, namely, the problem of 'replication crisis'. And this crisis is not unique to the field of psychology and emerged in many scientific studies. In 2016, a poll conducted by the journal Nature reported that more than half (52\%) of scientists surveyed believed science was facing a “replication crisis” \citep{baker20161}.
+
+In the case of Open Science Collaboration (OSC), depending on the criterion used, only 36\% to 47\% of the original studies were successfully replicated, which led many to conclude that there is a “replication crisis” in psychological science \citep{carey2015psychology}. 
+
+As indicated by many authors, the RP:P dataset is always regarded as an invaluable resources since there are disagreements on qualification or assessment of the reproducibility \citep{goodman2016does,amrhein2017earth}. In this case, The simply descriptive statistics taken at face values in the RP:P project are referred to as underestimates of reproducibility. 
+
+
+There are a great number of reasons for the lack of reproducibility of scientific studies, like multiple testing, $P$-hacking, publication bias and under-powered studies \citep{benjamin2018redefine}. The leading one is over-Reliance on null hypothesis significance testing \citep{ioannidis2005most}. Under the Neyman-Pearson (NP) hypothesis testing framework of hypothesis testing, $P$-value is connected with the notion of replication. Statistically significant findings and claiming of new discoveries solely based on the criterion of p<0.05 would result in a high rate of false positives. Therefore, replication probability, the probability of repeating a statistically significant result is substantially lower than expected.
+
+
+The inferential inadequacies of statistical significance testing, which result in the problem of nob-reproducibility are now widely recognized. Therefore, in an attempt to assess the Reproducibility of researches, reliable approaches are required. Up untill now, there is no agreement on an unified statistical criterion for assessment of replication success. I summarized these approaches into several categories.
+
+1. 'Significant result' of replication study based on $P$-value < 0.5.
+
+The use of single $P$-value is essentially controvertial as indicated in many literatures \citep{benjamin2018redefine, amrhein2018remove}. 
+   
+2. Comparison of the original and replication effect size
+
+To test the whether the original effect size was within the 95\% confidence interval of replication study \citep{} and vice verse , checking the effect of replication study was within the confidence interval of original effect size or not\citep{patil2016should, opensicence }.
+
+3. Combination of original and replication studies by meta-analytic estimate of the effect size
+
+Combine evidence from both studies to improve results over the consideration of only single studies \citep{braver2014continuously}.
+
+4. Computation of a prediction interval of the effect estimate of the replication study
+
+Judge whether the effect size of replication sutdy is within the 95\% prediction interval \citep{patil2016should}.
+
+5. Bayes 
+
+Why Bayesian.
+
+
+Among these approaches for assessment of replciation success, 'Sceptical $p$-value' works well as a quantitative measure for replication success s\citep{held2018new}. It defined replication success as the conflict between the sufficiently sceptical priro and the replication effect estimate. With the integration of the uncertainty of two studies, the original one and the replication one, and comparison of respective effect size, this Bayes-non-Bayes approach provides effective approach for evaluation of replication success.
+
+However, there are some essential weakness of this method, which makes it not so attractive for replicaiton success evaluation.
+
+
+From CI to p 
+
+To assess replication success by an confidence interval, this master thesis have the following goals. Chapter 1 introduction of the method, Chapter 2 talks about the mehtod with the theoretical background, Chapter 3 show the results of implemention of this approach in the the datase. Finally, the thesis would be closed with a discussion.
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -177,13 +230,8 @@ Notice how in Figure~\ref{f02:1} everything is properly scaled.
 
 \begin{figure}
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.98, 0.98, 0.98}\color{fgcolor}
-
-{\centering \includegraphics[width=\textwidth-3cm]{figure/ch02_figunnamed-chunk-3-1} 
-
-}
-
-
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
 
 \end{knitrout}
   \caption{Test figure to illustrate figure options used by knitr.}
