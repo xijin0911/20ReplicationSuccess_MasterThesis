@@ -1,4 +1,4 @@
 # 20ReplicationSuccess_MasterThesis
-Master thesis (Dec. 2019-May. 2020) supervised by prof. Dr. Leonhard Held
+Master thesis (Dec. 2019-Jun. 2020) supervised by prof. Dr. Leonhard Held
 
 Sceptical Confidence Interval for Evidential Assessment of Replication Studies
