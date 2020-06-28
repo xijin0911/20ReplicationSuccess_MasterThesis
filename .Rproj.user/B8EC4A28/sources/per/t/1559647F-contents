@@ -1,0 +1,112 @@
+\documentclass[english]{beamer}
+
+%% The most common packages are already included in:
+\usetheme{biostat}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+%% Header data: (adjust to your needs:
+\def\uzhunit{Biostatistics}             %% if (not) needed comment/uncomment
+%\def\uzhunitext{STA480}
+
+\title[Title of the Presentation]{Enter the Title of the presentation here}
+%% Optional Argument in [Brackets]: Short Title for Footline
+
+%% The following are all optional, simply comment them
+%\subtitle{Subtitle (optional)}
+%\institute{Biostatistics Journal Club}  %% optional
+\author{Maxime Muster}
+%\date{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+<<include=FALSE,purl=FALSE>>=
+library(knitr)
+opts_chunk$set(
+fig.path='figures/fig', fig.show='hold', 
+	cache=TRUE, fig.height=4)
+@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{document}
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%% Start with slides here: put them between `\begin{frame}` and `\end{frame}`
+
+\begin{frame}{The title of this slide can take up two lines}
+
+Standard \LaTeX/knitr rules apply  
+\begin{itemize}
+\item all agree: error messages are cryptic 
+\item there are some strange errors persist, check if \texttt{$\backslash$end\{frame\}} is present
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Font sizes}
+
+Available font sizes: 8, 9, 10, 11, 12, 14, 17 and 20pt. 
+
+Default font size is 11pt. 
+\pause
+
+This presentations uses size 11pt.\\
+
+We recommend to use $\approx$8 lines per slide.
+\end{frame}
+
+\begin{frame}{Classical use of Knitr}
+
+<<echo=FALSE>>=
+set.seed( 101)
+hist( rnorm( 250))
+@
+
+\end{frame}
+
+
+\begin{frame}{Where to get help}
+
+Short overview of beamer:  
+\url{https://www.sharelatex.com/learn/Beamer}
+
+If you have too much time, find here the full document:
+\url{http://texdoc.net/texmf-dist/doc/latex/beamer/doc/beameruserguide.pdf}. 
+%% You might as well ask your supervisor for a more interesting task.r
+
+\pause
+
+For knitr:
+\url{https://github.com/yihui/knitr/releases/download/doc/knitr-manual.pdf}
+or 
+\url{https://yihui.name/knitr/}
+
+And my favorite page therein:
+\url{https://yihui.name/knitr/options/\#chunk-options}
+
+\end{frame}
+
+
+\begin{frame}[fragile]\frametitle{Bibliography}
+If needed, citations with natbib
+\begin{verbatim}
+ \citet{Held:14}, \cite{Furr:Bach:Du:16}
+\end{verbatim}
+produces \citet{Held:14}, \cite{Furr:Bach:Du:16}.
+
+Coloring links are more difficult\dots
+\end{frame}
+
+
+\begin{frame}{References}
+  \small
+  \bibliographystyle{apalike}
+\bibliography{illustration}
+\end{frame}
+
+%\appendix
+%% Possible backup slides...
+
+%% chapter division is accomplished with:
+%% \part{Appendix}
+
+\end{document}

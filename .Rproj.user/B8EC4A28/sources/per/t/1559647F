@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1582197828076.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3382745464",
+    "id" : "1559647F",
+    "lastKnownWriteTime" : 1582199347,
+    "last_content_update" : 1582199347889,
+    "path" : "D:/Projects/20ReplicationSuccess_MasterThesis/presentation/present_withR.Rnw",
+    "project_path" : "presentation/present_withR.Rnw",
+    "properties" : {
+        "cursorPosition" : "105,10",
+        "scrollLine" : "89"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "sweave"
+}

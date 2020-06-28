@@ -1,0 +1,142 @@
+\documentclass[11pt,a4paper,twoside,openany]{book}
+\input{header.sty}   % packages, layout and standard macros
+\usepackage{natbib}
+\usepackage{float} 
+\usepackage{amsmath} % math equation
+\floatplacement{figure}{H}
+
+%----space settings-----
+\setlength{\textfloatsep}{10pt plus 1.0pt minus 2.0pt}
+\setlength{\floatsep}{12.0pt plus 2.0pt minus 2.0pt}
+\setlength{\intextsep}{0.8pt plus 0.8pt minus 0.8pt}
+\setlength{\abovecaptionskip}{0.8pt plus 3pt minus 2pt}
+\setlength{\belowcaptionskip}{0.8pt plus 3pt minus 2pt}
+
+%----space settings-----
+
+
+\begin{document}
+
+\input{title}tlmgr_install('framed') 
+<<'main-setup',include=FALSE,purl=FALSE>>=
+library(knitr)
+opts_chunk$set(
+    concordance=TRUE,
+    child.command = 'include',
+    cache=FALSE,echo=FALSE,
+    fig.pos = 'H',
+    fig.paty="plot")
+@
+\graphicspath{{./figure/}}
+\DeclareGraphicsExtensions{.pdf,.png}
+\setcounter{tocdepth}{1}
+
+% \thispagestyle{empty}
+% \begin{center}
+%   \vspace*{6cm}{\bfseries\Huge
+%   Replication Success:\\[5mm] Sceptical Confidence Interval \\[5mm]
+%     
+%   }
+%   \vfill
+%   \rm
+% 
+%   \LARGE
+%   Xijin Chen\\[12mm]
+%   
+%   \normalsize
+%   Version \today
+% \end{center}  
+% \newpage
+% \thispagestyle{empty}~
+% \newpage
+% \pagenumbering{roman}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Abstract}
+%\addtocontents{toc}{\protect \vspace*{13.mm}}
+%\addcontentsline{toc}{chapter}{\bfseries{Abstract}}
+\thispagestyle{plain}\markboth{Abstract}{Abstract}
+
+Many thanks to ...
+
+%\addtocontents{toc}{\protect \vspace*{10mm}}
+%\cleardoublepage
+%\pagenumbering{roman}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Acknowledgments}
+%\addtocontents{toc}{\protect \vspace*{13.mm}}
+%\addcontentsline{toc}{chapter}{\bfseries{Acknowledgments}}
+\thispagestyle{plain}\markboth{Acknowledgments}{Acknowledgments}
+
+Many thanks to ...
+
+\bigskip
+
+\begin{flushright}
+  Xijin Chen\\
+  May 2020
+\end{flushright}
+
+%\addtocontents{toc}{\protect \vspace*{10mm}}
+%\cleardoublepage
+%\pagenumbering{roman}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thispagestyle{plain}\markboth{Contents}{Contents}
+\tableofcontents
+\setkeys{Gin}{width=.8\textwidth}
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<'child-chapter01', child='chapter01.Rnw'>>=
+@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<'child-chapter02', child='chapter02.Rnw'>>=
+@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<'child-chapter03', child='chapter03.Rnw'>>=
+@
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<'child-chapter04', child='chapter04.Rnw'>>=
+@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<'child-chapter05', child='chapter05.Rnw'>>=
+@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+<<'child-chapterA1', child='chapterA1.Rnw'>>=
+@
+
+
+
+\cleardoublepage
+\phantomsection
+\addtocontents{toc}{\protect \vspace*{10mm}}
+\addcontentsline{toc}{chapter}{\bfseries Bibliography}
+
+
+\bibliographystyle{mywiley} 
+\bibliography{biblio}
+%\printbibliography
+
+\cleardoublepage
+
+\end{document}
+

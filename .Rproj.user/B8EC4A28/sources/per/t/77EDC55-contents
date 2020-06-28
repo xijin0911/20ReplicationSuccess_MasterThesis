@@ -1,0 +1,128 @@
+
+@article{begley2015reproducibility,
+  title={Reproducibility in science: improving the standard for basic and preclinical research},
+  author={Begley, C Glenn and Ioannidis, John PA},
+  journal={Circulation research},
+  volume={116},
+  number={1},
+  pages={116--126},
+  year={2015},
+  publisher={Am Heart Assoc}
+}
+
+@article{open2015estimating,
+  title={Estimating the reproducibility of psychological science},
+  author={Open Science Collaboration and others},
+  journal={Science},
+  volume={349},
+  number={6251},
+  pages={aac4716},
+  year={2015},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{baker20161,
+  title={1,500 scientists lift the lid on reproducibility},
+  author={Baker, Monya},
+  journal={Nature News},
+  volume={533},
+  number={7604},
+  pages={452},
+  year={2016}
+}
+
+@article{carey2015psychology,
+  title={Psychology’s fears confirmed: Rechecked studies don’t hold up},
+  author={Carey, Benedict},
+  journal={New York Times},
+  volume={27},
+  pages={A1},
+  year={2015}
+}
+
+@article{goodman2016does,
+  title={What does research reproducibility mean?},
+  author={Goodman, Steven N and Fanelli, Daniele and Ioannidis, John PA},
+  journal={Science translational medicine},
+  volume={8},
+  number={341},
+  pages={341ps12--341ps12},
+  year={2016},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{amrhein2017earth,
+  title={The earth is flat (p> 0.05): significance thresholds and the crisis of unreplicable research},
+  author={Amrhein, Valentin and Korner-Nievergelt, Fr{\"a}nzi and Roth, Tobias},
+  journal={PeerJ},
+  volume={5},
+  pages={e3544},
+  year={2017},
+  publisher={PeerJ Inc.}
+}
+
+@article{ioannidis2005most,
+  title={Why most published research findings are false},
+  author={Ioannidis, John PA},
+  journal={PLoS medicine},
+  volume={2},
+  number={8},
+  pages={e124},
+  year={2005},
+  publisher={Public Library of Science}
+}
+
+@article{benjamin2018redefine,
+  title={Redefine statistical significance},
+  author={Benjamin, Daniel J and Berger, James O and Johannesson, Magnus and Nosek, Brian A and Wagenmakers, E-J and Berk, Richard and Bollen, Kenneth A and Brembs, Bj{\"o}rn and Brown, Lawrence and Camerer, Colin and others},
+  journal={Nature Human Behaviour},
+  volume={2},
+  number={1},
+  pages={6},
+  year={2018},
+  publisher={Nature Publishing Group}
+}
+
+@article{benjamin2018redefine,
+  title={Redefine statistical significance},
+  author={Benjamin, Daniel J and Berger, James O and Johannesson, Magnus and Nosek, Brian A and Wagenmakers, E-J and Berk, Richard and Bollen, Kenneth A and Brembs, Bj{\"o}rn and Brown, Lawrence and Camerer, Colin and others},
+  journal={Nature Human Behaviour},
+  volume={2},
+  number={1},
+  pages={6},
+  year={2018},
+  publisher={Nature Publishing Group}
+}
+
+@article{amrhein2018remove,
+  title={Remove, rather than redefine, statistical significance},
+  author={Amrhein, Valentin and Greenland, Sander},
+  journal={Nature Human Behaviour},
+  volume={2},
+  number={1},
+  pages={4},
+  year={2018},
+  publisher={Nature Publishing Group}
+}
+
+@article{patil2016should,
+  title={What should researchers expect when they replicate studies? A statistical view of replicability in psychological science},
+  author={Patil, Prasad and Peng, Roger D and Leek, Jeffrey T},
+  journal={Perspectives on Psychological Science},
+  volume={11},
+  number={4},
+  pages={539--544},
+  year={2016},
+  publisher={Sage Publications Sage CA: Los Angeles, CA}
+}
+
+@article{braver2014continuously,
+  title={Continuously cumulating meta-analysis and replicability},
+  author={Braver, Sanford L and Thoemmes, Felix J and Rosenthal, Robert},
+  journal={Perspectives on Psychological Science},
+  volume={9},
+  number={3},
+  pages={333--342},
+  year={2014},
+  publisher={Sage Publications Sage CA: Los Angeles, CA}
+}

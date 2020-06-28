@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1582189135506.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "47134724",
+    "id" : "CEB07351",
+    "lastKnownWriteTime" : 1582196701,
+    "last_content_update" : 1582196701889,
+    "path" : "C:/Users/chenx/Desktop/kjkj.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "12,0",
+        "last_setup_crc32" : "",
+        "scrollLine" : "0",
+        "tempName" : "Untitled2"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

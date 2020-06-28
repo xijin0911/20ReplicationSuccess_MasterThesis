@@ -1,0 +1,92 @@
+% LaTeX file for Chapter 01
+<<'preamble01',include=FALSE>>=
+library(knitr)
+opts_chunk$set(
+    fig.path='figure/ch01_fig', 
+    self.contained=FALSE,
+    cache=FALSE
+)
+@
+
+
+\chapter{Introduction}
+\label{chap1:intro}
+
+Reproducibility is a core principle for scientific progress. Reproducible research is particularly important because it forms the foundation on which future studies are built, with the establishment of credibility of a hypothesis. It is subsequent evidence that help to support claimed research findings. Thus, reproducibility of basic searches help to adhere to good scientific results. However, the way to assess, statistically, the degree to which a replication study succeeds or fails is not established with a certain criterion.
+
+
+The past few years have witnessed impressive efforts on replication studies. Among these reproducibility projects, Reproducibility Project: Psychology (RPP) is the largest and most well known one \citep{open2015estimating}. The RPP project conducted "a large-scale, collaborative effort to obtain an initial estimate of the reproducibility of psychological science" by 270 crowd sourced researchers in 64 different institutions in 11 different countries. Researchers attempted direct replications of 100 studies published in three leading psychology journals in the year 2008. Each study was replicated only once. Replications attempted to follow original protocols as closely as possible. In almost all cases, replication studies used larger sample sizes than the original studies and therefore had greater statistical power, which means a greater probability of correctly rejecting the null hypothesis and lower probability of false findings.
+
+
+A larger number of reports illustrated that results of large scale reproducibility projects could not be replicated due to the problem of "replication crisis", which is not unique to the field of psychology, but emerged in many scientific studies from several fields \citep{cova2018estimating, camerer2016evaluating, camerer2018evaluating}. In 2016, a poll conducted by the journal Nature reported that more than half (52\%) of scientists surveyed believed science was facing a "replication crisis" \citep{baker20161}.
+
+In the case of the RPP project, depending on the criterion used, only 36\% to 47\% of the original studies were successfully replicated, which led many to conclude that there is a "replication crisis" in psychological science \citep{carey2015psychology}. 
+
+
+% However, the RP:P dataset is always regarded an invaluable resources since there are disagreements on qualification or assessment of the reproducibility \citep{goodman2016does,amrhein2017earth}. In this case, the simply descriptive statistics taken at face values in the RP:P project are referred to as underestimates of reproducibility. 
+
+
+There are a great number of reasons for the lack of reproducibility of scientific studies, like multiple testing, $P$-hacking, publication bias, under-powered studies and over-reliance on null hypothesis significance testing \citep{benjamin2018redefine}. As mentioned in a comment in \cite{gilbert2016comment}, RPP project seriously underestimated the reproducibility of psychological science because of the benchmark used for assessment of reproducibility in this project.
+
+The leading cause of non-reproducibility is statistical standards of evidence for claiming new discoveries in many fields of science are
+simply too low \citep{benjamin2018redefine}. Namely, the credibility of claims of new discoveries based on "statistically significant" findings with $P$<0.05 results would result is misleading.
+
+% Under the Neyman-Pearson (NP) hypothesis testing framework, $P$-value is connected with the notion of replication. However, statistically significant findings and claiming of new discoveries solely based on the criterion of $p$<0.05 would result in a high rate of false positives. Therefore, replication probability, the probability of repeating a statistically significant result as mentioned in \cite{goodman1992comment}, is substantially lower than expected. 
+
+Over-estimation of evidence against the null hypothesis, due to the sole reliance on $p$-value, has been widely recognized recently. As indicated in \cite{ioannidis2005most}, false scientific findings are unavoidable and there is no way to know 100\% what the truth is in any research question. Reducing the $P$-value threshold for claims of new discoveries from 0.5 to 0.005 help to improve reproducibility immediately, as proposed by 72 authors in \cite{benjamin2018redefine}. This proposal was followed by a  number of different voices \citep{mcshane2019abandon,lakens2018justify}.
+
+In an attempt to assess the reproducibility of researches properly, reliable approaches are required. Up until now, there is no agreement on a single standard for evaluation of replication success. I list several indicators of reproducibility and show some of their properties briefly.
+
+\begin{enumerate}
+ 
+
+\item 'Significant result' of replication study based on $p$-value < 0.5.
+
+%Typically, $p$-value less than 0.05 is a conventionally criterion in statistical inference. However, it does not take the data of original study into accout.
+
+%It is criticized a lot \citep{benjamin2018redefine, amrhein2018remove} for many reasons. High rate of non-replication (lack of confirmation) of research discoveries is a consequence of the convenient \citep{sterne2001sifting, wacholder2004assessing, risch2000searching, ioannidis2005most}.
+   
+\item Comparison of the original and replication effect size.
+
+%Compraing the magnitude of one study and effect sizes of another avoids special emphasis on single $p$-values.  
+
+%On the one hand, to check whether the replication effect is significantly different than the original estimate, we can check whether the original effect size was within the 95\% confidence interval of replication study \citep{open2015estimating}. On the other hand, we can also check whether the effect size of replication study was within the 95\% confidence interval of original effect size or not \citep{open2015estimating}.
+
+\item Combination of original and replication studies by meta-analytic estimate of the effect size.
+
+%In order to take information about the precision of both effect estimates into account. Finally, a meta-analytic estimate of the effect size could help \citep{braver2014continuously}. The use of meta analysis is based on the assumption of exchangeability.
+
+\item Computation of a prediction interval of the effect estimate of the replication study
+
+%Prediction intervals could help to answer the question: "What effect would we expect to see in the replication study once we have seen the original effect?". A prediction interval makes an analogous claim about an individual future observation given what we have already observed \citep{patil2016should}. Assessment of replication success depends on whether the effect size of replication study is within the 95\% prediction interval.
+
+\item Bayesian methods to assess quantitatively the credibility of a new research findings.
+
+%With Bayesian approaches, essential disadvantages of frequentist inferential methods can be avoided (e.g. misinterpretaion, exaggeration of significance etc.) \citep{matthews2001should}. There are a number of reprodubility indicators in the framework of Bayesian methods, like 'Critical Prior Interval' \citep{matthews2001should}, 'Replication Bayes Factor' \citep{ly2019replication} and 'Sceptical $p$-value' \citep{held2018new}.
+
+\end{enumerate}
+
+Among all of these approaches, 'Sceptical $p$-value', a Bayes-non-Bayes approach, proposed by \citep{held2018new} works well as a quantitative measure for replication success. 
+
+The sceptical $p$-value is defined as conflict between the replicaiton effect estimate and sufficiently sceptical prior, which challenges the original study result. Thus, sceptical $p$-value extends the ordinary $p$-value of replication study, from considering effect and sample size of only replication study to both studies.
+
+Conventionally, 95\% confidence intervals (CIs) are much often more used to summarize findings from the dichotomous test decision to the effect range estimate. Confidence intervals reflect the results at the level of data measurement. 
+
+In this replication success assessment framework, sceptical $p$-value also works as an indirect measure of the degree of the replication success, just like ordinary $p$-value works as ineasure of the evidence against the null hypothesis. Therefore, "sceptical confidence interval" is proposed in this master thesis.
+
+%provide information about a range in which the true value lies with a certain degree of probability, as well as about the direction and strength of the demonstrated effect. This measure allows claim of statistical plausibility and clinical relevance of new study findings. Namely, confidence intervals help to show results at the level of data measurement. Thus, we have access to effect size estimates and corresponding sample sizes.
+
+%Considering the advantage of confidence interval over $p$-value, this master thesis works on a compatible 'sceptical confidence interval', corresponding to the sceptical $p$-values. Sceptical $p$-values defined replication success as the conflict between a sufficiently sceptical prior and the replication effect estimate. To challenge the original study effect, sufficiently sceptical prior is defined around no effect estimate, and the corresponding posterior is fixed at the boundary of with-without effect. With sceptical $p$-value, the integration of the uncertainty of two studies is also taken into consideration, instead of only effect estimates of these two studies.
+
+
+
+%It has also been proved that this criteria for replication success is too stringent, which means traditional level 0.05 may result in low replication success rate. The recalibration of sceptical $p$-value, based on control of Type-I error at 1/1600 helps to achieve the calibrated sceptical confidence interval at significance level 0.13 \citep{held2019harmonic}.
+
+%The way to extend from sceptical $p$-value to sceptical confidence is achieved by the extension of sufficiently sceptical prior. Instead of a sufficiently sceptical prior centered around no effect, sceptical confidence interval is extended to a non-zero sceptical prior mean $\mu$. Therefore, the confidence districts show a set of $\mu$ values that do not lead to replication success.
+
+To assess replication success by sceptical confidence interval, this master thesis has the following objectives: Firstly, development of sceptical confidence interval and corresponding sceptical confidence curve based on analysis of credibility and prior-data conflict mentioned in \cite{held2018new}. Secondly, examples of the application of sceptical confidence interval in two different cases. The corresponding sceptical confidence interval differs under these two different circumstances. The third goal is to explore properties of sceptical confidence interval. Fourthly, I implemented this approach on four large-scale replicaiton projects: Data from Reproduciblity Project Psychology (RPP), Experimental Economics Replication Project (EERP), Social Sciences Replication Project (SSRP), Experimental Philosophy Replicability Project (EPRP). Besides, the method sceptical confidence interval is also applied for equivalence test, where the point null hypothesis is extended to two one-sided tests (TOST) for clinically relevant result. Finally, a discussion is followed to show possible development of this method. 
+
+This master thesis is structured as follows. In Chapter \ref{chap1:intro}, research question and other related researches are introduced. Chapter \ref{chap2:methods} introduces the development of sceptical confidence interval method. Chapter \ref{Chap3:results} presents the implemention of this approach: large-scale replication projects and equivelence tests. Finally, this thesis would be closed with discussions in Chapter \ref{Chap4:discuss}. 
+
+
+

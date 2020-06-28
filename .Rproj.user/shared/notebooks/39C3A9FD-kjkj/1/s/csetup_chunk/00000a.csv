@@ -1,0 +1,7 @@
+"0","tinytex::tlmgr_update()
+"
+"2","
+TeX Live does not seem to be installed. See https://yihui.org/tinytex/.
+"
+"2","tlmgr update --all --self
+"
